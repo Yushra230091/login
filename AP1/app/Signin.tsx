@@ -9,6 +9,7 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor="skyblue" barStyle="light-content" />
       <View style={styles.innerContainer}>
+        <Text style={[styles.label, styles.boldLabel]}>Sign in</Text>
         <Text style={styles.label}>Email*</Text>
         <TextInput
           style={styles.input}
@@ -70,6 +71,10 @@ const styles = StyleSheet.create({
   label: {
     marginBottom: 5,
     fontSize: 16,
+  },
+  boldLabel: {
+    marginLeft: 90,
+    fontSize: 24,
     fontWeight: 'bold',
   },
   input: {
@@ -88,7 +93,6 @@ const styles = StyleSheet.create({
   linkText: {
     color: '#000',
     fontSize: 16,
-    fontWeight: 'bold',
   },
   button: {
     height: 40,
